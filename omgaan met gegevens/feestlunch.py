@@ -68,7 +68,6 @@ if kortingsbonnen == "ja":
 
     print(" ")
     print(f"Uw te betalen bedrag is {round(totaal, 2 )} euro")
-    print(" ")
     print("----------------------------------")
 
 elif kortingsbonnen == "nee":
@@ -79,13 +78,15 @@ elif kortingsbonnen == "nee":
     totaal = prijs_croissanten + prijs_per_stokbrood
     time.sleep(1)
     print(" ")
-    print("Uw bedrag wordt uitgerekend, een moment geduld alstublieft. ")
+    print("|------------------------------------------------------------|")
+    print("|                                                            |")
+    print("| Uw bedrag wordt uitgerekend, een moment geduld alstublieft.|")
+    print("|                                                            |")
+    print("|------------------------------------------------------------|")
     time.sleep(5)
-
     print(" ")
-    print("-----------------------------------|")
-    print(f"Het te betalen bedrag is, {round(totaal, 2)} euro    |")
-    print("-----------------------------------|")
+    print(f"Het te betalen bedrag is, {round(totaal, 2)} euro")
+    print("------------------------------------")
 
 else: 
      print("   ")
