@@ -58,7 +58,7 @@ if kortingsbonnen == "jaa":
     time.sleep(1)
     print(" ")
     print("----------------------------------|")
-    print(f"Het te betalen bedrag is,{totaal}     |")
+    print(f"Het te betalen bedrag is {round(totaal, 2 )},   |")
     print("----------------------------------|")
 
 elif kortingsbonnen == "nee":
@@ -70,12 +70,14 @@ elif kortingsbonnen == "nee":
     time.sleep(1)
     print(" ")
     print("-----------------------------------|")
-    print(f"Het te betalen bedrag is, {totaal}     |")
+    print(f"Het te betalen bedrag is, {round(totaal, 2)}     |")
     print("-----------------------------------|")
 
 else: 
  print("   ")
+ print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
  print("Dit kan ik niet verwerken! ")
+ print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
  print("   ")
 
 
