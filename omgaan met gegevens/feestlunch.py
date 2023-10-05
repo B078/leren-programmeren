@@ -74,7 +74,7 @@ elif kortingsbonnen == "nee":
     print("-----------------------------------|")
 
 else: 
-    kortingsbonnen != "nee" and kortingsbonnen != "jaa"; 
+    kortingsbonnen != "nee" 
 print("   ")
 print("Dit kan ik niet verwerken! ")
 print("   ")
