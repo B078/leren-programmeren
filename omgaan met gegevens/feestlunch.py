@@ -37,9 +37,9 @@ print("Een moment geduld wordt genoteerd. ")
 print("                                   ")
 time.sleep(1.5)
 
-kortingsbonnen = input("Heeft u kortingsbonnen? (j/n) ")
- 
-if kortingsbonnen == "j": 
+kortingsbonnen = input("Heeft u kortingsbonnen? (jaa/nee) ")
+
+if kortingsbonnen == "jaa": 
     time.sleep(1)
     print("                                                             ")
     hoeveelheid_kortingsbonnen  = input("Hoeveel kortingbonnen heeft u? ")
@@ -61,7 +61,7 @@ if kortingsbonnen == "j":
     print(f"Het te betalen bedrag is,{totaal}     |")
     print("----------------------------------|")
 
-elif kortingsbonnen == "n":
+elif kortingsbonnen == "nee":
 
     prijs_croissanten = prijs_per_croissant * aantal_croissantjes
     prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
@@ -74,7 +74,9 @@ elif kortingsbonnen == "n":
     print("-----------------------------------|")
 
 else: 
-    kortingsbonnen != "n" and kortingsbonnen != "j"; 
+    kortingsbonnen != "nee" and kortingsbonnen != "jaa"; 
+print("   ")
 print("Dit kan ik niet verwerken! ")
+print("   ")
 
 
