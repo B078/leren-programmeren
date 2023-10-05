@@ -4,13 +4,13 @@
 
 #Maak een programma feestlunch.py voor deze berekening.
 
-import time
-
 # prijs per stuk 
 prijs_per_croissant = 0.39 
 prijs_per_stokbrood = 2.78
 
-print("goedemiddag mevrouw. ")
+import time
+
+print("goedemiddag. ")
 time.sleep(1.5)
 
 aantal_croissantjes = int(input("Hoeveel croissantjes zou u hebben gewild? ")) #hoeveelheden
@@ -30,18 +30,11 @@ time.sleep(1.5)
 aantal_kortingsbonnen = input("Heeft u kortingsbonnen? (j/n) ")
  
 if aantal_kortingsbonnen == "j": 
-    waarde_korting = int(input("Wat is de waarde van de bonnen "))
-
-hoeveel_korting = waarde_korting * aantal_kortingsbonnen # berekening
-
-print(hoeveel_korting)
-
-
-                            
-
-
-
-
+    hoeveelheid_kortingsbonnen  = input("Hoeveel kortingbonnen heeft u? ")
+    print("                               ")
+    prijs_per_kortingsbon = float(input("Wat is de waarde van de bonnen "))
+    korting = float(hoeveelheid_kortingsbonnen) * float(prijs_per_kortingsbon)
+    print(korting)
 
 
 #berekening 
