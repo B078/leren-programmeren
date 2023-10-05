@@ -38,16 +38,17 @@ print("Een moment geduld wordt genoteerd. ")
 print("                                   ")
 time.sleep(1.5)
 
-kortingsbonnen = input("Heeft u kortingsbonnen? (jaa/nee) ")
-
-if kortingsbonnen == "jaa": 
+kortingsbonnen = input("Heeft u kortingsbonnen? (ja/nee) ")
+ 
+if kortingsbonnen == "ja": 
     time.sleep(1)
     print("                                                             ")
     hoeveelheid_kortingsbonnen  = input("Hoeveel kortingbonnen heeft u? ")
-    print("    ")
     print("---------------------------------")
-    prijs_per_kortingsbon = float(input("Wat is de waarde van de bonnen "))
+    time.sleep(0.5)
+    prijs_per_kortingsbon = float(input("Wat is de waarde van de bonnen? "))
     korting = float(hoeveelheid_kortingsbonnen) * float(prijs_per_kortingsbon)
+    time.sleep(1.5)
     print("    ")
     print("Uw korting is", korting ,"euro" )
 
@@ -58,11 +59,17 @@ if kortingsbonnen == "jaa":
     totaal = (prijs_croissanten + prijs_per_stokbrood) - korting
     time.sleep(1)
     print(" ")
-    print("----------------------------------|")
+    print("|-------------------------------------------------------------|")
+    print("|                                                             |")
+    print("| Het bedrag wordt uitgerekend, een moment geduld alstublieft.|")
+    print("|                                                             |")
+    print("|-------------------------------------------------------------|")
+    time.sleep(5)
+
     print(" ")
-    print(f"Het te betalen bedrag is {round(totaal, 2 )},   |")
+    print(f"Uw te betalen bedrag is {round(totaal, 2 )} euro")
     print(" ")
-    print("----------------------------------|")
+    print("----------------------------------")
 
 elif kortingsbonnen == "nee":
 
@@ -72,15 +79,19 @@ elif kortingsbonnen == "nee":
     totaal = prijs_croissanten + prijs_per_stokbrood
     time.sleep(1)
     print(" ")
+    print("Uw bedrag wordt uitgerekend, een moment geduld alstublieft. ")
+    time.sleep(5)
+
+    print(" ")
     print("-----------------------------------|")
-    print(f"Het te betalen bedrag is, {round(totaal, 2)}     |")
+    print(f"Het te betalen bedrag is, {round(totaal, 2)} euro    |")
     print("-----------------------------------|")
 
 else: 
- print("   ")
- print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
- print("Dit kan ik niet verwerken! ")
- print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
- print("   ")
-
-
+     print("   ")
+     print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+     print("Dit kan ik niet verwerken! ")
+     print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+     print("type (ja) of (nee) alstublieft!")
+     print("!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+     print("   ")
