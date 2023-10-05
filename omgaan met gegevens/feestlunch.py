@@ -1,8 +1,3 @@
-#Je wilt 17 croissantjes van elk 39 eurocent 
-#2 stokbroden van elk 2,78 euro kopen. 
-#Je hebt 3 kortingsbonnen van 50 eurocent. Hoeveel geld moet je betalen?
-
-#Maak een programma feestlunch.py voor deze berekening.
 
 # prijs per stuk 
 prijs_per_croissant = 0.39 
@@ -38,7 +33,7 @@ print("Een moment geduld wordt genoteerd. ")
 print("                                   ")
 time.sleep(1.5)
 
-kortingsbonnen = input("Heeft u kortingsbonnen? (ja/nee) ")
+kortingsbonnen = input("Heeft u kortingsbonnen? (ja/nee) ") 
  
 if kortingsbonnen == "ja": 
     time.sleep(1)
@@ -71,7 +66,7 @@ if kortingsbonnen == "ja":
     print("----------------------------------")
 
 elif kortingsbonnen == "nee":
-
+    #berekening 
     prijs_croissanten = prijs_per_croissant * aantal_croissantjes
     prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
 
