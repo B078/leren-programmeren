@@ -10,9 +10,19 @@ prijs_per_stokbrood = 2.78
 
 import time
 
-print("goedemiddag. ")
+print("Welkom bij Bakker Verschoor ")
+print(" ")
+time.sleep(1)
+
+print("---------PRIJZEN LIJST-----------")
+print("1 croissantje kost," ,prijs_per_croissant)
+print("1 stokbroodje kost," , prijs_per_stokbrood)
+print("---------PRIJZEN LIJST-----------")
 time.sleep(1.5)
 
+print("   ")
+print("Goedemiddag.")
+print("   ")
 aantal_croissantjes = int(input("Hoeveel croissantjes zou u hebben gewild? ")) #hoeveelheden
 
 print("                                   ")
@@ -27,19 +37,44 @@ print("Een moment geduld wordt genoteerd. ")
 print("                                   ")
 time.sleep(1.5)
 
-aantal_kortingsbonnen = input("Heeft u kortingsbonnen? (j/n) ")
+kortingsbonnen = input("Heeft u kortingsbonnen? (j/n) ")
  
-if aantal_kortingsbonnen == "j": 
+if kortingsbonnen == "j": 
+    time.sleep(1)
+    print("                                                             ")
     hoeveelheid_kortingsbonnen  = input("Hoeveel kortingbonnen heeft u? ")
-    print("                               ")
+    print("    ")
+    print("---------------------------------")
     prijs_per_kortingsbon = float(input("Wat is de waarde van de bonnen "))
     korting = float(hoeveelheid_kortingsbonnen) * float(prijs_per_kortingsbon)
-    print(korting)
+    print("    ")
+    print("Uw korting is", korting ,"euro" )
 
+     #bereking
+    prijs_croissanten = prijs_per_croissant * aantal_croissantjes
+    prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
 
-#berekening 
-kosten_croissanten = aantal_croissantjes * prijs_per_croissant
+    totaal = (prijs_croissanten + prijs_per_stokbrood) - korting
+    time.sleep(1)
+    print(" ")
+    print("----------------------------------|")
+    print(f"Het te betalen bedrag is,{totaal}     |")
+    print("----------------------------------|")
 
-kosten_stokbroden = aantal_stokbroden * prijs_per_stokbrood
+elif kortingsbonnen == "n":
+
+    prijs_croissanten = prijs_per_croissant * aantal_croissantjes
+    prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
+
+    totaal = prijs_croissanten + prijs_per_stokbrood
+    time.sleep(1)
+    print(" ")
+    print("-----------------------------------|")
+    print(f"Het te betalen bedrag is, {totaal}    |")
+    print("-----------------------------------|")
+
+else: 
+    kortingsbonnen != "n" and kortingsbonnen != "j"; 
+print("Dit kan ik niet verwerken! ")
 
 
