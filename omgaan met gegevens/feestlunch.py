@@ -23,6 +23,7 @@ time.sleep(1.5)
 print("   ")
 print("Goedemiddag.")
 print("   ")
+time.sleep(0.5)
 aantal_croissantjes = int(input("Hoeveel croissantjes zou u hebben gewild? ")) #hoeveelheden
 
 print("                                   ")
@@ -58,7 +59,9 @@ if kortingsbonnen == "jaa":
     time.sleep(1)
     print(" ")
     print("----------------------------------|")
+    print(" ")
     print(f"Het te betalen bedrag is {round(totaal, 2 )},   |")
+    print(" ")
     print("----------------------------------|")
 
 elif kortingsbonnen == "nee":
