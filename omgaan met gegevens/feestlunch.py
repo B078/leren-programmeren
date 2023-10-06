@@ -70,7 +70,7 @@ elif kortingsbonnen == "nee":
     prijs_croissanten = prijs_per_croissant * aantal_croissantjes
     prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
 
-    totaal = prijs_croissanten + prijs_per_stokbrood
+    totaal = prijs_croissanten + prijs_stokbroden
     time.sleep(1)
     print(" ")
     print("|------------------------------------------------------------|")
