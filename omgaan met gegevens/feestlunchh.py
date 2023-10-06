@@ -18,4 +18,6 @@ aantal_korting = kortings_bonnen * waarde_bonnen
 
 totaal = prijzen_croissant + prijzen_stokbroden - aantal_korting
 
-print(f"Uw te betalen bedrag is, {round(totaal, 2)} ")
+#resultaat
+print(" ")
+print(f"De feestlunch kost je bij de bakker {round(totaal, 2 )} euro voor de 17 croissantjes en de 2 stokbroden als de 3 kortingsbonnen nog geldig zijn!")
