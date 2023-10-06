@@ -11,5 +11,5 @@ totale_kosten = totaal_per_persoon * aantal_spelers
 
 #Print resultaat
 print("Totaal is Є" ,round(totale_kosten, 2 ))
-print(f"Dit geweldige dagje-uit met {aantal_spelers} mensen in de Speelhal met {totaal_aantal_minuten} minuten VR kost je maar 44.44 euro")
+print(f"Dit geweldige dagje-uit met {aantal_spelers} mensen in de Speelhal met {totaal_aantal_minuten} minuten VR kost je maar {totale_kosten} euro")
 
