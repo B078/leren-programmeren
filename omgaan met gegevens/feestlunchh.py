@@ -14,10 +14,12 @@ waarde_bonnen = 0.50
 
 prijzen_croissant = aantal_croissant * prijs_croissant
 prijzen_stokbroden = aantal_stokbroden * prijs_stokbrood
+
+totaal_kosten_zonder_korting = prijzen_croissant + prijzen_stokbroden
 aantal_korting = kortings_bonnen * waarde_bonnen
 
-totaal = prijzen_croissant + prijzen_stokbroden - aantal_korting
+totaal_met_korting = prijzen_croissant + prijzen_stokbroden - aantal_korting
 
 #resultaat
 print(" ")
-print(f"De feestlunch kost je bij de bakker {round(totaal, 2 )} euro voor de 17 croissantjes en de 2 stokbroden als de 3 kortingsbonnen nog geldig zijn!")
+print(f"De feestlunch kost je bij de bakker {round(totaal_met_korting, 2 )} euro voor de {aantal_croissant} croissantjes en de {aantal_stokbroden} stokbroden als de {kortings_bonnen} kortingsbonnen nog geldig zijn!")
