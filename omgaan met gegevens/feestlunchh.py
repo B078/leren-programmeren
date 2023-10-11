@@ -7,7 +7,7 @@ aantal_croissanten = int(input("hoeveel croissanten had u gewild? "))
 aantal_stokbroden = int(input("hoeveel stokbroden had u gewild? "))
 
 aantal_kortings_bonnen = int(input("hoeveel kortingsbonnen heeft u? "))
-waarde_korting = float(input("wat is de waarde van de bon? "))
+waarde_korting = int(input("wat is de waarde van de bon? "))
 
 #berekening
 
@@ -16,7 +16,7 @@ prijzen_stokbroden = aantal_stokbroden * PRIJS_STOKBROOD
 
 totaal_kosten_zonder_korting = prijzen_croissant + prijzen_stokbroden 
 
-aantal_korting = aantal_kortings_bonnen * waarde_korting
+aantal_korting = aantal_kortings_bonnen * (waarde_korting / 100)
 totaal_met_korting = totaal_kosten_zonder_korting - aantal_korting
 
 #resultaat
