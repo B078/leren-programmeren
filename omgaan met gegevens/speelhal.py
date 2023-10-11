@@ -1,12 +1,15 @@
 #Variabelen
-aantal_spelers = 4
-prijs_per_periode_persoon = 0.37
-totaal_aantal_minuten = 45
-toegansticket = 7.45
+TOEGANGTICKET = 7.45
+PRIJS_PER_PERIODE_PERSOON = 0.37
 VR_PERIODE =  5
 
+aantal_spelers = int(input("met hoeveel personen bent u? "))
+print("--------disclaimer-------")
+print("kosten vr per 5 min 0.37 pp")
+print("--------disclaimer-------")
+totaal_aantal_minuten = int(input("hoeveel minuten willen jullie in de vr? "))
 #Berekeningnen
-totaal_per_persoon = ((prijs_per_periode_persoon / VR_PERIODE ) * totaal_aantal_minuten) + toegansticket
+totaal_per_persoon = ((PRIJS_PER_PERIODE_PERSOON / VR_PERIODE ) * totaal_aantal_minuten) + TOEGANGTICKET
 totale_kosten = totaal_per_persoon * aantal_spelers
 
 #Print resultaat
