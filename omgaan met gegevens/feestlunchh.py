@@ -1,18 +1,18 @@
 
 #constanten
-PRIJS_CROISSANT = 0.39
-PRIJS_STOKBROOD = 2.78
+PRIJS_CROISSANT = 39
+PRIJS_STOKBROOD = 78
 
 aantal_croissanten = int(input("hoeveel croissanten had u gewild? "))
 aantal_stokbroden = int(input("hoeveel stokbroden had u gewild? "))
 
 aantal_kortings_bonnen = int(input("hoeveel kortingsbonnen heeft u? "))
-waarde_korting = int(input("wat is de waarde van de bon? "))
+waarde_korting = int(input("wat is de waarde van de bon? (in centen) "))
 
 #berekening
 
-prijzen_croissant = aantal_croissanten * PRIJS_CROISSANT
-prijzen_stokbroden = aantal_stokbroden * PRIJS_STOKBROOD
+prijzen_croissant = aantal_croissanten * (PRIJS_CROISSANT /100 )
+prijzen_stokbroden = aantal_stokbroden * (PRIJS_STOKBROOD /100 )
 
 totaal_kosten_zonder_korting = prijzen_croissant + prijzen_stokbroden 
 
