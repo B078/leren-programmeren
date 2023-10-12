@@ -3,6 +3,7 @@
 PRIJS_CROISSANT = 39
 PRIJS_STOKBROOD = 78
 
+#gegevens opvragen 
 aantal_croissanten = int(input("hoeveel croissanten had u gewild? "))
 aantal_stokbroden = int(input("hoeveel stokbroden had u gewild? "))
 
