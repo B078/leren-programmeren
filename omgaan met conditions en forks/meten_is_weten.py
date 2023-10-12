@@ -1,35 +1,34 @@
-# Vraag de gebruiker om twee gehele getallen in te voeren
+# Vraag de gebruiker om het eerste gehele getal (a) in te voeren
 while True:
     try:
         a = int(input("Voer het eerste gehele getal (a) in: "))
         break
     except ValueError:
-        print("invoer ongeldig, voer een geheel getal in alstublieft!")
-        
+        print("Ongeldige invoer voor a. Voer een geheel getal in alstublieft!")
+
+# Vraag de gebruiker om het tweede gehele getal (b) in te voeren
 while True:
     try:
         b = int(input("Voer het tweede gehele getal (b) in: "))
         break
     except ValueError:
-        print("invoer ongeldig, voer een geheel getal in alstublieft!")
+        print("Ongeldige invoer voor b. Voer een geheel getal in alstublieft!")
 
-#varabile
+# Variabelen voor minimum en maximum
 MIN = a
 MAX = a
 
 # Controleer of a groter is dan b
 if a > b:
-    Max = a
-    print("a is het grootste getal:", Max)
+    MAX = a
+    print("a is het grootste getal:", MAX)
 # Controleer of a kleiner is dan b
 elif a < b:
-    Min = a
-    print("a is het kleinste getal:", Min)
-#controleer of a gelijk is aan b
+    MIN = a
+    print("a is het kleinste getal:", MIN)
+# Controleer of a en b gelijk zijn
 else:
     print("a en b zijn even groot.")
 
-print("het minimum is:", MIN)
-print("het maximium is", MAX)
-    
-
+print("Het minimum is:", MIN)
+print("Het maximum is:", MAX)
