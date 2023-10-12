@@ -8,6 +8,7 @@ while True:
     print(" ")
     print(f"de {leeftijd} jarige {naam} drinkt het liefst {lievelings_drinken} bij {lievelings_eten}")
 
-    antwoord = input("Wil je nog een keer proberen? (ja/nee)")
+    print()
+    antwoord = input("Wil je nog een keer proberen? (ja/nee) ")
     if antwoord.lower() != "ja":
-       break  
+      break  
