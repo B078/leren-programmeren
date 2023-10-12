@@ -1,9 +1,21 @@
 # Vraag de gebruiker om twee gehele getallen in te voeren
-a = float(input("Voer het eerste gehele getal (a) in: "))
-b = float(input("Voer het tweede gehele getal (b) in: "))
+while True:
+    try:
+        a = int(input("Voer het eerste gehele getal (a) in: "))
+        break
+    except ValueError:
+        print("invoer ongeldig, voer een geheel getal in alstublieft!")
+        
+while True:
+    try:
+        b = int(input("Voer het tweede gehele getal (b) in: "))
+        break
+    except ValueError:
+        print("invoer ongeldig, voer een geheel getal in alstublieft!")
 
-min = a
-max = a
+#varabile
+MIN = a
+MAX = a
 
 # Controleer of a groter is dan b
 if a > b:
@@ -17,7 +29,7 @@ elif a < b:
 else:
     print("a en b zijn even groot.")
 
-print("het minimum is:", min)
-print("het maximium is", max)
+print("het minimum is:", MIN)
+print("het maximium is", MAX)
     
 
