@@ -10,7 +10,8 @@ if a > b:
 elif a < b:
     Min = a
     print("a is het kleinste getal:", Min)
+#controleer of a gelijk is aan b
 else:
-    print("a en b zijn gelijk.")
+    print("a en b zijn even groot.")
+    
 
-# Sluit het programma af
