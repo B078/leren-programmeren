@@ -1,5 +1,5 @@
 #constanten
-DIKTE_TOUW_KLEIN = 3
+DIKTE_TOUW_KLEIN = 3.0
 DIKTE_TOUW_MIDDEL = 4.5
 DIKTE_TOUW_GROOT = 6.3
 PRIJS_PER_METER_KLEIN = 2.75
@@ -13,33 +13,32 @@ print(f"klein touw  prijs: {DIKTE_TOUW_KLEIN} euro")
 print(f"middel touw prijs: {DIKTE_TOUW_MIDDEL} euro")
 print(f"groot touw  prijs: {DIKTE_TOUW_GROOT} euro")
 print("-----prijzenlijst-------")
+print()
 
 #gegevens
 while True:
     try:
-        print()
         aantal_klein_touw = int(input("Hoeveel stukken wilt u van de kleine touw? "))
         lengte_klein_touw = float(input("wat had u gewild als lengte per stuk? (in meters) "))
+        print()
         break
     except ValueError:
         print("ongeldige invoer, !!voer alstublieft een geldig getal in!!")
 
 while True:
     try:
-        print()
-        time.sleep(1)
         aantal_middel_touw =int(input("Hoeveel stukken wilt u van de middel touw? "))
         lengte_middel_touw = float(input("wat had u gewild als lengte per stuk? (in meters) "))
+        print()
         break
     except ValueError:
         print("ongeldige invoer, !!voer alstublieft een geldig getal in!!")
 
 while True:
     try:
-        print()
-        time.sleep(1)
-        aantal_groot_touw = int(input("Hoeveel stukken wilt u van de grote  touw? "))
+        aantal_groot_touw = int(input("Hoeveel stukken wilt u van de grote touw? "))
         lengte_groot_touw = float(input("wat had u gewild als lengte per stuk touw? (in meters) "))
+        print()
         break
     except ValueError:
         print("ongeldige invoer, !!voer altstublieft een geldig getal in!!")
@@ -58,4 +57,6 @@ print()
 time.sleep(1.5)
 print("- - - - - - - - - - - - - - - - - - - - - -  -")
 print("bestellingoverzicht: ")
-print(f"dikte touw: {DIKTE_TOUW_MIDDEL} aantal stukken: {aantal_klein_touw}  aantal meters: {lengte_klein_touw}")
+print(f"dikte klein:  {DIKTE_TOUW_KLEIN}, aantal stukken: {aantal_klein_touw}, aantal meters: {lengte_klein_touw}")
+print(f"dikte middel: {DIKTE_TOUW_MIDDEL}, aantal stukken: {aantal_middel_touw}, aantal meters: {lengte_middel_touw}")
+print(f"dikte groot:  {DIKTE_TOUW_GROOT}, aantal stukken: {aantal_groot_touw}, aantal meters: {lengte_klein_touw}")
