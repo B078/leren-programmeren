@@ -15,9 +15,28 @@ print(f"large pizza prijs:  {PRIJS_LARGE_PIZZA} euro")
 print("------prijzenlijst------")
 
 #vraag gebruiker aantal per afmeting
-aantal_small_pizza = int(input("Hoeveel small pizza's wilt u hebben? "))
-aantal_medium_pizza = int(input("Hoeveel medium pizza's wilt u hebben? "))
-aantal_large_pizza = int(input("Hoeveel large pizza's wilt u hebben? "))
+while True:
+    try:
+        aantal_small_pizza = int(input("Hoeveel small pizza's wilt u hebben? "))
+        break #exit the loop if valid input is provided
+    except ValueError:
+        print("ongeldige invoer. voer alsublieft een geldig getal in voor small pizza's")
+
+
+while True:
+    try:
+        aantal_medium_pizza = int(input("Hoeveel medium pizza's wilt u hebben? "))
+        break  # Exit the loop if valid input is provided
+    except ValueError:
+        print("Ongeldige invoer. Voer alstublieft een geldig getal in voor medium pizza's.")
+
+while True:
+    try:
+        aantal_large_pizza = int(input("Hoeveel large pizza's wilt u hebben? "))
+        break  # Exit the loop if valid input is provided
+    except ValueError:
+        print("Ongeldige invoer. Voer alstublieft een geldig getal in voor large pizza's.")
+
 
 #berekening
 totaal_small = PRIJS_SMALL_PIZZA * aantal_small_pizza
