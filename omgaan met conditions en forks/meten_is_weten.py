@@ -1,6 +1,9 @@
 # Vraag de gebruiker om twee gehele getallen in te voeren
-a = int(input("Voer het eerste gehele getal (a) in: "))
-b = int(input("Voer het tweede gehele getal (b) in: "))
+a = float(input("Voer het eerste gehele getal (a) in: "))
+b = float(input("Voer het tweede gehele getal (b) in: "))
+
+min = a
+max = a
 
 # Controleer of a groter is dan b
 if a > b:
@@ -13,5 +16,8 @@ elif a < b:
 #controleer of a gelijk is aan b
 else:
     print("a en b zijn even groot.")
+
+print("het minimum is:", min)
+print("het maximium is", max)
     
 
