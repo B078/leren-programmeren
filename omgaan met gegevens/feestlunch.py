@@ -1,7 +1,7 @@
 
 # prijs per stuk 
-prijs_per_croissant = 0.39 
-prijs_per_stokbrood = 2.78
+PRIJS_PER_CROISSANT = 0.39 
+PRIJS_PER_STOKBROOD = 2.78
 
 import time
 
@@ -10,8 +10,8 @@ print(" ")
 time.sleep(1)
 
 print("---------PRIJZEN LIJST-----------")
-print("1 croissantje kost," ,prijs_per_croissant)
-print("1 stokbroodje kost," , prijs_per_stokbrood)
+print("1 croissantje kost," ,PRIJS_PER_CROISSANT)
+print("1 stokbroodje kost," , PRIJS_PER_STOKBROOD)
 print("---------PRIJZEN LIJST-----------")
 time.sleep(1.5)
 
@@ -48,10 +48,10 @@ if kortingsbonnen == "ja":
     print("Uw korting is", korting ,"euro" )
 
      #bereking
-    prijs_croissanten = prijs_per_croissant * aantal_croissantjes
-    prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
+    prijs_croissanten = PRIJS_PER_CROISSANT * aantal_croissantjes
+    prijs_stokbroden = PRIJS_PER_STOKBROOD * aantal_stokbroden
 
-    totaal = (prijs_croissanten + prijs_per_stokbrood) - korting
+    totaal = (prijs_croissanten + prijs_stokbroden) - korting
     time.sleep(1)
     print(" ")
     print("|-------------------------------------------------------------|")
@@ -67,8 +67,8 @@ if kortingsbonnen == "ja":
 
 elif kortingsbonnen == "nee":
     #berekening 
-    prijs_croissanten = prijs_per_croissant * aantal_croissantjes
-    prijs_stokbroden = prijs_per_stokbrood * aantal_stokbroden
+    prijs_croissanten = PRIJS_PER_CROISSANT * aantal_croissantjes
+    prijs_stokbroden = PRIJS_PER_STOKBROOD* aantal_stokbroden
 
     totaal = prijs_croissanten + prijs_stokbroden
     time.sleep(1)

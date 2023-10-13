@@ -1,7 +1,7 @@
 
 #constanten
 PRIJS_CROISSANT = 39
-PRIJS_STOKBROOD = 78
+PRIJS_STOKBROOD = 278
 
 #gegevens opvragen 
 aantal_croissanten = int(input("hoeveel croissanten had u gewild? "))
