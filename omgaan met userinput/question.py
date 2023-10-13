@@ -6,7 +6,7 @@ while True:
     lievelings_drinken = input(f"en wat drink je het liefst bij {lievelings_eten}? ")
 #output
     print(" ")
-    print(f"de {leeftijd} jarige {naam} drinkt het liefst {lievelings_drinken} bij {lievelings_eten}")
+    print(f"de {leeftijd} jarige {naam} drinkt het liefst een {lievelings_drinken} bij {lievelings_eten}")
 
     print()
     antwoord = input("Wil je nog een keer proberen? (ja/nee) ")
