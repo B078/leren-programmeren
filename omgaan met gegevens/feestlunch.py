@@ -1,9 +1,9 @@
+import time
 
 # prijs per stuk 
 PRIJS_PER_CROISSANT = 0.39 
 PRIJS_PER_STOKBROOD = 2.78
 
-import time
 
 print("Welkom bij Bakker Verschoor ")
 print(" ")
