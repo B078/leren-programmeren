@@ -4,7 +4,6 @@ import time
 PRIJS_PER_CROISSANT = 0.39 
 PRIJS_PER_STOKBROOD = 2.78
 
-
 print("Welkom bij Bakker Verschoor ")
 print(" ")
 time.sleep(1)
