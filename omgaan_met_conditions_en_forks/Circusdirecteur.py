@@ -59,6 +59,6 @@ if ervaring_acrobatiek < MIN_ERVARING_ACROBATIEK:
     passed = False
 
 if passed:
-    print("Gefeliciteerd! U komt in aanmerking voor de functie Circus Directeur..")
+    print(f"Gefeliciteerd! {naam}. U komt in aanmerking voor de functie Circus Directeur..")
 else:
-    print("U voldoet niet aan onze eisen voor Circus Directeur. Het spijt ons.")
+    print(f"Helaas {naam}. U voldoet niet aan onze eisen voor Circus Directeur. Het spijt ons.")
