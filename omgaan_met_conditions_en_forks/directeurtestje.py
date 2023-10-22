@@ -44,7 +44,7 @@ redenen_mannen = []
 redenen_vrouwen = []
 redenen_anderen = []
 
-# Berekening
+# constanten
 MIN_WEIGHT = 90
 MAX_WEIGHT = 120
 MIN_LENGTE = 150
@@ -58,6 +58,7 @@ MAN_SNOR = 10
 VROUW_LENGTE_HAAR = 20
 BREEDTE_GLIMLACH = 10
 
+#berekening 
 if geslacht == "man":
     if rijbewijs.lower() != "j":
         redenen_mannen.append("U heeft geen vrachtwagen rijbewijs.")
