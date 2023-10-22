@@ -1,7 +1,7 @@
 import time
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - ")
-print("        sollicitatieformulier 'Circusdirecteur' ")
+print("      sollicitatieformulier 'Circusdirecteur' ")
 print("- - - - - - - - - - - - - - - - - - - - - - - - - ")
 print("U begint nu aan uw sollicitatie voor Circusdirecteur voor Circus HotelDeBotel")
 print("hierbij komen een aantal vragen")
