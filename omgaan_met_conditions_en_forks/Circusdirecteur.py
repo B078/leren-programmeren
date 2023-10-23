@@ -63,7 +63,26 @@ if geslacht == "man":
                         if ervaring_dieren_dressuur >= 4 or ervaring_jongleren >= 5 or ervaring_acrobatiek >= 3:
                             if bezit_diploma.lower() == "j" or jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5:
                                 if snor_breedte >= 10:
-                                    print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")                                 
+                                    print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")    
+                                else:
+                                    print("helaas u voldoet niet aan de vereisten.") 
+                            else:
+                                print("helaas u voldoet niet aan de vereisten.") 
+                        else:
+                            print("helaas u voldoet niet aan de vereisten.") 
+                    else:
+                        print("helaas u voldoet niet aan de vereisten.") 
+                else:
+                    print("helaas u voldoet niet aan de vereisten.") 
+            else:
+                print("helaas u voldoet niet aan de vereisten.") 
+        else:
+            print("helaas u voldoet niet aan de vereisten.") 
+    else:
+        print("helaas u voldoet niet aan de vereisten.") 
+else:
+    print("helaas u voldoet niet aan de vereisten.")                              
+
 
 if geslacht == "vrouw":
     if rijbewijs.lower() == "j":
@@ -76,6 +95,27 @@ if geslacht == "vrouw":
                                 if soort_haar == "rood krulhaar":
                                     if lengte_haar >= 20:
                                         print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
+                                    else:
+                                        print("helaas u voldoet niet aan de vereisten.") 
+                                else:
+                                    print("helaas u voldoet niet aan de vereisten.") 
+                            else:
+                                print("helaas u voldoet niet aan de vereisten.") 
+                        else:
+                            print("helaas u voldoet niet aan de vereisten.") 
+                    else:
+                        print("helaas u voldoet niet aan de vereisten.") 
+                else:
+                    print("helaas u voldoet niet aan de vereisten.") 
+            else:
+                print("helaas u voldoet niet aan de vereisten.") 
+        else:
+            print("helaas u voldoet niet aan de vereisten.") 
+    else:
+        print("helaas u voldoet niet aan de vereisten.") 
+else:
+    print("helaas u voldoet niet aan de vereisten.")
+
 
 if geslacht == "anders":
     if rijbewijs.lower() == "j":
@@ -87,3 +127,21 @@ if geslacht == "anders":
                             if bezit_diploma.lower() == "j" or jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5:
                                 if breedte_glimlach >= 10:
                                     print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
+                                else:
+                                    print("helaas u voldoet niet aan de vereisten.") 
+                            else:
+                                print("helaas u voldoet niet aan de vereisten.") 
+                        else:
+                            print("helaas u voldoet niet aan de vereisten.") 
+                    else:
+                        print("helaas u voldoet niet aan de vereisten.") 
+                else:
+                    print("helaas u voldoet niet aan de vereisten.") 
+            else:
+                print("helaas u voldoet niet aan de vereisten.") 
+        else:
+            print("helaas u voldoet niet aan de vereisten.") 
+    else:
+        print("helaas u voldoet niet aan de vereisten.") 
+else:
+    print("helaas u voldoet niet aan de vereisten.") 
