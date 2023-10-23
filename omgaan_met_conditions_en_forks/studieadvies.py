@@ -33,7 +33,7 @@ if aantal_weken >= 10:
     print(OPTIES)
     ans_vraag5 = int(input(""))
     # You can skip questions 6 and 7 for aantal_weken > 10
-    ans_vraag6 = ans_vraag7 = 0
+    
 
 else:
     print(COMPETENTIE_STELLING_1)
