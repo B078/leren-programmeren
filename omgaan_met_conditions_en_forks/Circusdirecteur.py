@@ -54,94 +54,95 @@ MIN_LOONDIENST_WERKNEMERS = 5
 MAN_SNOR = 10
 VROUW_LENGTE_HAAR = 20
 
+    
 if geslacht == "man":
     if rijbewijs.lower() == "j":
         if hoge_hoed.lower() == "j":
-            if lichaamsgewicht >= MIN_WEIGHT and lichaamsgewicht <= MAX_WEIGHT:
-                if lichaamslengte >= MIN_LENGTE and lichaamslengte <= MAX_LENGTE:
+            if MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT:
+                if MIN_LENGTE <= lichaamslengte <= MAX_LENGTE:
                     if certificaat.lower() == "j":
                         if ervaring_dieren_dressuur >= 4 or ervaring_jongleren >= 5 or ervaring_acrobatiek >= 3:
-                            if bezit_diploma.lower() == "j" or jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5:
+                            if bezit_diploma.lower() == "j" or (jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5):
                                 if snor_breedte >= 10:
-                                    print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")    
+                                    print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
                                 else:
-                                    print("helaas u voldoet niet aan de vereisten.") 
+                                    print("Helaas, uw snor is niet breed genoeg.")
                             else:
-                                print("helaas u voldoet niet aan de vereisten.") 
+                                print("Helaas, uw ondernemers- en werknemerservaring voldoet niet aan de eisen.")
                         else:
-                            print("helaas u voldoet niet aan de vereisten.") 
+                            print("Helaas, uw ervaring in dieren dressuur, jongleren of acrobatiek voldoet niet aan de eisen.")
                     else:
-                        print("helaas u voldoet niet aan de vereisten.") 
+                        print("Helaas, u heeft geen certificaat.")
                 else:
-                    print("helaas u voldoet niet aan de vereisten.") 
+                    print("Helaas, uw lichaamslengte voldoet niet aan de eisen.")
             else:
-                print("helaas u voldoet niet aan de vereisten.") 
+                print("Helaas, uw lichaamsgewicht voldoet niet aan de eisen.")
         else:
-            print("helaas u voldoet niet aan de vereisten.") 
+            print("Helaas, u heeft geen hoge hoed.")
     else:
-        print("helaas u voldoet niet aan de vereisten.") 
+        print("Helaas, u heeft geen rijbewijs.")
 else:
-    print("helaas u voldoet niet aan de vereisten.")                              
+    print("Helaas, deze functie is alleen beschikbaar voor mannen.")
 
 
 if geslacht == "vrouw":
     if rijbewijs.lower() == "j":
         if hoge_hoed.lower() == "j":
-            if lichaamsgewicht >= MIN_WEIGHT and lichaamsgewicht <= MAX_WEIGHT:
-                if lichaamslengte >= MIN_LENGTE and lichaamslengte <= MAX_LENGTE:
+            if MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT:
+                if MIN_LENGTE <= lichaamslengte <= MAX_LENGTE:
                     if certificaat.lower() == "j":
                         if ervaring_dieren_dressuur >= 4 or ervaring_jongleren >= 5 or ervaring_acrobatiek >= 3:
-                            if bezit_diploma.lower() == "j" or jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5:
+                            if bezit_diploma.lower() == "j" or (jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5):
                                 if soort_haar == "rood krulhaar":
                                     if lengte_haar >= 20:
                                         print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
                                     else:
-                                        print("helaas u voldoet niet aan de vereisten.") 
+                                        print("Helaas, uw haarlengte voldoet niet aan de eisen.")
                                 else:
-                                    print("helaas u voldoet niet aan de vereisten.") 
+                                    print("Helaas, uw haartype voldoet niet aan de eisen.")
                             else:
-                                print("helaas u voldoet niet aan de vereisten.") 
+                                print("Helaas, uw ondernemers- en werknemerservaring voldoet niet aan de eisen.")
                         else:
-                            print("helaas u voldoet niet aan de vereisten.") 
+                            print("Helaas, uw ervaring in dieren dressuur, jongleren of acrobatiek voldoet niet aan de eisen.")
                     else:
-                        print("helaas u voldoet niet aan de vereisten.") 
+                        print("Helaas, u heeft geen certificaat.")
                 else:
-                    print("helaas u voldoet niet aan de vereisten.") 
+                    print("Helaas, uw lichaamslengte voldoet niet aan de eisen.")
             else:
-                print("helaas u voldoet niet aan de vereisten.") 
+                print("Helaas, uw lichaamsgewicht voldoet niet aan de eisen.")
         else:
-            print("helaas u voldoet niet aan de vereisten.") 
+            print("Helaas, u heeft geen hoge hoed.")
     else:
-        print("helaas u voldoet niet aan de vereisten.") 
+        print("Helaas, u heeft geen rijbewijs.")
 else:
-    print("helaas u voldoet niet aan de vereisten.")
+    print("Helaas, deze functie is alleen beschikbaar voor vrouwen.")
 
 
 if geslacht == "anders":
     if rijbewijs.lower() == "j":
         if hoge_hoed.lower() == "j":
-            if lichaamsgewicht >= MIN_WEIGHT and lichaamsgewicht <= MAX_WEIGHT:
-                if lichaamslengte >= MIN_LENGTE and lichaamslengte <= MAX_LENGTE:
+            if MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT:
+                if MIN_LENGTE <= lichaamslengte <= MAX_LENGTE:
                     if certificaat.lower() == "j":
                         if ervaring_dieren_dressuur >= 4 or ervaring_jongleren >= 5 or ervaring_acrobatiek >= 3:
-                            if bezit_diploma.lower() == "j" or jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5:
+                            if bezit_diploma.lower() == "j" or (jaren_ondernemer >= 3 and aantal_werknemer_loondienst >= 5):
                                 if breedte_glimlach >= 10:
                                     print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
                                 else:
-                                    print("helaas u voldoet niet aan de vereisten.") 
+                                    print("Helaas, uw glimlach is niet breed genoeg.")
                             else:
-                                print("helaas u voldoet niet aan de vereisten.") 
+                                print("Helaas, uw ondernemers- en werknemerservaring voldoet niet aan de eisen.")
                         else:
-                            print("helaas u voldoet niet aan de vereisten.") 
+                            print("Helaas, uw ervaring in dieren dressuur, jongleren of acrobatiek voldoet niet aan de eisen.")
                     else:
-                        print("helaas u voldoet niet aan de vereisten.") 
+                        print("Helaas, u heeft geen certificaat.")
                 else:
-                    print("helaas u voldoet niet aan de vereisten.") 
+                    print("Helaas, uw lichaamslengte voldoet niet aan de eisen.")
             else:
-                print("helaas u voldoet niet aan de vereisten.") 
+                print("Helaas, uw lichaamsgewicht voldoet niet aan de eisen.")
         else:
-            print("helaas u voldoet niet aan de vereisten.") 
+            print("Helaas, u heeft geen hoge hoed.")
     else:
-        print("helaas u voldoet niet aan de vereisten.") 
+        print("Helaas, u heeft geen rijbewijs.")
 else:
-    print("helaas u voldoet niet aan de vereisten.") 
+    print("Helaas, uw geslacht komt niet overeen met de vereisten.")
