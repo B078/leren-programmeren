@@ -129,6 +129,7 @@ elif geslacht == "vrouw":
         print(f"Sorry, {naam}, u komt niet in aanmerking voor de functie om de volgende redenen:")
         for reden in redenen_vrouwen:
             print(f"- {reden}")
+            
 elif geslacht == "anders":
 
     if not redenen_anderen:
