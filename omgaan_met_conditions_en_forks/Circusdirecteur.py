@@ -81,8 +81,6 @@ if geslacht == "man":
             print("Helaas, u heeft geen hoge hoed.")
     else:
         print("Helaas, u heeft geen rijbewijs.")
-else:
-    print("Helaas, deze functie is alleen beschikbaar voor mannen.")
 
 
 if geslacht == "vrouw":
@@ -114,9 +112,6 @@ if geslacht == "vrouw":
             print("Helaas, u heeft geen hoge hoed.")
     else:
         print("Helaas, u heeft geen rijbewijs.")
-else:
-    print("Helaas, deze functie is alleen beschikbaar voor vrouwen.")
-
 
 if geslacht == "anders":
     if rijbewijs.lower() == "j":
@@ -144,5 +139,4 @@ if geslacht == "anders":
             print("Helaas, u heeft geen hoge hoed.")
     else:
         print("Helaas, u heeft geen rijbewijs.")
-else:
-    print("Helaas, uw geslacht komt niet overeen met de vereisten.")
+
