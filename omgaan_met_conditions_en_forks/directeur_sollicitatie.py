@@ -40,9 +40,8 @@ elif  geslacht == "vrouw":
 elif geslacht == "anders":
     breedte_glimlach = int(input("Hoeveel cm is uw glimlach in breedte (hele cm) "))
 
-redenen_mannen = []
-redenen_vrouwen = []
-redenen_anderen = []
+redenen = []
+
 
 # constanten
 MIN_WEIGHT = 90
@@ -59,82 +58,40 @@ VROUW_LENGTE_HAAR = 20
 BREEDTE_GLIMLACH = 10
 
 #berekening 
-if geslacht == "man":
-    if rijbewijs.lower() != "j":
-        redenen_mannen.append("U heeft geen vrachtwagen rijbewijs.")
-    if hoge_hoed.lower() != "j":
-        redenen_mannen.append("U bezit geen hoge hoed.")
-    if not (MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT):
-        redenen_mannen.append("Uw lichaamsgewicht voldoet niet aan de vereisten.")
-    if not (MIN_LENGTE <= lichaamslengte <= MAX_LENGTE):
-        redenen_mannen.append("Uw lichaamslengte voldoet niet aan de vereisten.")
-    if certificaat.lower() != "j":
-        redenen_mannen.append("U heeft geen Certificaat overleven met gevaarlijk personeel.")
-    if ervaring_dieren_dressuur < MIN_ERVARING_DIER and ervaring_jongleren < MIN_ERVARING_JONGLEREN and ervaring_acrobatiek < MIN_ERVARING_ACROBATIEK:
-        redenen_mannen.append("U heeft onvoldoende ervaring in dieren-dressuur, jongleren en acrobatiek.")
-    if bezit_diploma.lower() != "j" and jaren_ondernemer < MIN_ONDERNEMER or aantal_werknemer_loondienst < MIN_LOONDIENST_WERKNEMERS:
-        redenen_mannen.append("U voldoet niet aan de ondernemersvereisten.")
+
+if rijbewijs.lower() != "j":
+    redenen.append("U heeft geen vrachtwagen rijbewijs.")
+if hoge_hoed.lower() != "j":
+    redenen.append("U bezit geen hoge hoed.")
+if not (MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT):
+    redenen.append("Uw lichaamsgewicht voldoet niet aan de vereisten.")
+if not (MIN_LENGTE <= lichaamslengte <= MAX_LENGTE):
+    redenen.append("Uw lichaamslengte voldoet niet aan de vereisten.")
+if certificaat.lower() != "j":
+    redenen.append("U heeft geen Certificaat overleven met gevaarlijk personeel.")
+if ervaring_dieren_dressuur < MIN_ERVARING_DIER and ervaring_jongleren < MIN_ERVARING_JONGLEREN and ervaring_acrobatiek < MIN_ERVARING_ACROBATIEK:
+    redenen.append("U heeft onvoldoende ervaring in dieren-dressuur, jongleren en acrobatiek.")
+if bezit_diploma.lower() != "j" and jaren_ondernemer < MIN_ONDERNEMER or aantal_werknemer_loondienst < MIN_LOONDIENST_WERKNEMERS:
+    redenen.append("U voldoet niet aan de ondernemersvereisten.")
+
+if geslacht == "man:":
     if snor_breedte < MAN_SNOR:
-        redenen_mannen.append("Uw snor is niet breed genoeg.")
+        redenen.append("Uw snor is niet breed genoeg.")
 
 elif geslacht == "vrouw":
-    if rijbewijs.lower() != "j":
-        redenen_vrouwen.append("U heeft geen vrachtwagen rijbewijs.")
-    if hoge_hoed.lower() != "j":
-        redenen_vrouwen.append("U bezit geen hoge hoed.")
-    if not (MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT):
-        redenen_vrouwen.append("Uw lichaamsgewicht voldoet niet aan de vereisten.")
-    if not (MIN_LENGTE <= lichaamslengte <= MAX_LENGTE):
-        redenen_vrouwen.append("Uw lichaamslengte voldoet niet aan de vereisten.")
-    if certificaat.lower() != "j":
-        redenen_vrouwen.append("U heeft geen Certificaat overleven met gevaarlijk personeel.")
-    if ervaring_dieren_dressuur < MIN_ERVARING_DIER and ervaring_jongleren < MIN_ERVARING_JONGLEREN and ervaring_acrobatiek < MIN_ERVARING_ACROBATIEK:
-        redenen_vrouwen.append("U heeft onvoldoende ervaring in dieren-dressuur, jongleren en acrobatiek.")
-    if bezit_diploma.lower() != "j" and jaren_ondernemer < MIN_ONDERNEMER or aantal_werknemer_loondienst < MIN_LOONDIENST_WERKNEMERS:
-        redenen_vrouwen.append("U voldoet niet aan de ondernemersvereisten.")
     if soort_haar == "rood krulhaar" and lengte_haar < VROUW_LENGTE_HAAR:
-        redenen_vrouwen.append("Uw haar is niet lang genoeg.")
+        redenen.append("Uw haar is niet lang genoeg.")
 
 elif geslacht == "anders":
-    if rijbewijs.lower() != "j":
-        redenen_anderen.append("U heeft geen vrachtwagen rijbewijs.")
-    if hoge_hoed.lower() != "j":
-        redenen_anderen.append("U bezit geen hoge hoed.")
-    if not (MIN_WEIGHT <= lichaamsgewicht <= MAX_WEIGHT):
-        redenen_anderen.append("Uw lichaamsgewicht voldoet niet aan de vereisten.")
-    if not (MIN_LENGTE <= lichaamslengte <= MAX_LENGTE):
-        redenen_anderen.append("Uw lichaamslengte voldoet niet aan de vereisten.")
-    if certificaat.lower() != "j":
-        redenen_anderen.append("U heeft geen Certificaat overleven met gevaarlijk personeel.")
-    if ervaring_dieren_dressuur < MIN_ERVARING_DIER and ervaring_jongleren < MIN_ERVARING_JONGLEREN and ervaring_acrobatiek < MIN_ERVARING_ACROBATIEK:
-        redenen_anderen.append("U heeft onvoldoende ervaring in dieren-dressuur, jongleren en acrobatiek.")
-    if bezit_diploma.lower() != "j" and jaren_ondernemer < MIN_ONDERNEMER or aantal_werknemer_loondienst < MIN_LOONDIENST_WERKNEMERS:
-        redenen_anderen.append("U voldoet niet aan de ondernemersvereisten.")
     if breedte_glimlach < BREEDTE_GLIMLACH:
-        redenen_anderen.append("U glimlach is niet lang genoeg.")
+        redenen.append("U glimlach is niet lang genoeg.")
 
 # Weergave van redenen per geslacht
-if geslacht == "man":
-    if not redenen_mannen:
-        print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
-    else:
-        print(f"Sorry, {naam}, u komt niet in aanmerking voor de functie om de volgende redenen:")
-        for reden in redenen_mannen:
-            print(f"- {reden}")
+if not redenen:
+    print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
+else:
+    print(f"Sorry, {naam}, u komt niet in aanmerking voor de functie om de volgende redenen:")
+    for reden in redenen:
+        print(f"- {reden}")
 
-elif geslacht == "vrouw":
-    if not redenen_vrouwen:
-        print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
-    else:
-        print(f"Sorry, {naam}, u komt niet in aanmerking voor de functie om de volgende redenen:")
-        for reden in redenen_vrouwen:
-            print(f"- {reden}")
-            
-elif geslacht == "anders":
-
-    if not redenen_anderen:
-        print(f"Gefeliciteerd {naam}, u komt in aanmerking voor de functie.")
-    else:
-        print(f"Sorry, {naam}, u komt niet in aanmerking voor de functie om de volgende redenen:")
-        for reden in redenen_anderen:
-            print(f"- {reden}")
+        
