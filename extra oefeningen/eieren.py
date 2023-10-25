@@ -22,5 +22,5 @@ if rest >= 1:
     
 else:
     print(f"u heeft {dozen_12} dozen van {DOOS_12} en {dozen_10 } dozen van {DOOS_10}")
-
+    
 
