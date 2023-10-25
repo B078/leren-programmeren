@@ -35,8 +35,13 @@ elif gele_kaas == "nee":
     elif blauwe_kaas == "nee":
         korst_kaas = input("heeft u kaas een korst? (ja/nee) ")
         if korst_kaas == "ja":
-            print()
-            print("u denkt aan Camembert")
+            stink_kaas = input("stinkt uw kaas? (ja/nee)")
+            if stink_kaas == "ja":
+               print()
+               print("camembert")
+            elif stink_kaas == "nee":
+                print()
+                print("Brie")
         elif korst_kaas == "nee":
             print()
             print("u denkt aan mozzerella")
