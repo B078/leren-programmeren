@@ -41,7 +41,6 @@ if aantal_weken >= 10:
     ans_vraag7 = int(input(""))
 
 
-# Bepaal welke set van variabelen en berekeningen te gebruiken op basis van AANTAL_VRAGEN_10w
 if aantal_weken >= 10:
     aantal_punten_per_vraag = [ans_vraag1, ans_vraag2, ans_vraag3, ans_vraag4, ans_vraag5, ans_vraag6, ans_vraag7]
     aantal_vragen = AANTAL_VRAGEN_10w
