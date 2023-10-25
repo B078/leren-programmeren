@@ -80,7 +80,7 @@ if aantal_weken >= 10:
         aantal_hoog_scores = sum(score <= REGELMATIG for score in aantal_punten_per_vraag)
 
             # Definieer de grens voor falen (meer dan de helft van de vragen met 'altijd', 'vaak' of 'regelmatig')
-        grens_falen_hoog_scores = AANTAL_VRAGEN / 2
+        grens_falen_hoog_scores = AANTAL_VRAGEN_10w / 2
 
             # Controleren of meer dan de helft van de vragen met 'altijd', 'vaak' of 'regelmatig' is beantwoord
         if aantal_hoog_scores > grens_falen_hoog_scores:
