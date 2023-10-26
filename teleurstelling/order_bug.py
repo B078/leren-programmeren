@@ -5,7 +5,7 @@ def vraag_getal(antwoord):
 
 def deel_getallen(a, b):
     antwoord = a / b
-    return antwoord
+    return int(antwoord)
 
 getal_1 = vraag_getal("eerste")
 getal_2 = vraag_getal("tweede")
