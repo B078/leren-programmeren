@@ -11,4 +11,4 @@ while True:
     print()
     antwoord = input("Wil je nog een keer proberen? (ja/nee) ")
     if antwoord.lower() != "ja":
-      break  
+      break
