@@ -1,5 +1,5 @@
 from test_lib import test, report
-from math import floor, ceil
+from math import floor, ceil, pow
 
 nr = 5.65499901
 expected = 5.65
@@ -21,9 +21,9 @@ expected = -45.4
 calculated = round(nr, 1) # use one function to calculate expected number
 test('approximately', expected, calculated)
 
-nr = 45.372
-expected = -45.372
-calculated = nr # use one function to calculate expected number
+nr = -45.372
+expected = 45.372
+calculated = abs(nr) # use one function to calculate expected number
 test('pessimistic', expected, calculated)
 
 nr = -2.3
