@@ -1,4 +1,3 @@
-
 def compare_numbers(nr1: int, nr2: int) -> str:
     if nr1 == nr2:
         return "Beide getallen zijn even groot"
