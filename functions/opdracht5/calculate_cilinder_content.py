@@ -1,10 +1,21 @@
 import math
+#funtion
+def inhoud(hoogte_cilinder: float, diameter: float) -> float:
+    straal = diameter / 2
+    inhoud = math.pi * (straal ** 2) * hoogte_cilinder #Inhoud = (diameter/ 2) x (diameter/ 2) x Pi x hoogte1
+    return inhoud 
+    
+#input
+while True:
+    try:
+        hoogte_cilinder = float(input("Wat is de hoogte van de cilinder? "))
+        diameter = float(input("Wat is de diameter van de cilinder? "))
+        break
+    except ValueError:
+        print("U heeft 1 van de vragen niet met een getal beantwoord")
 
-iameter = 8.0
-height = 5.0
-expect_content = 251.3
-calculated_content = calculate_cilinder_content(diameter,height)
-name = f'test diameter: {diameter} height: {height}'
-test(name, expect_content, calculated_content )
+cilinder_inhoud = inhoud(hoogte_cilinder, diameter)
 
-report()
+print(f"De inhoud van de cilinder is: {round(cilinder_inhoud, 1)}") #output 
+
+
