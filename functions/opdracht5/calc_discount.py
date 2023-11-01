@@ -1,3 +1,4 @@
+from test_lib import test, report
 #variable en constan
 month_discount_brands = 'Vespa,Kymco,Yamama'
 MONTH_DISCOUNT_PERC = 10
@@ -25,5 +26,3 @@ print()
 print(f"Uw gekozen merk is: {brand}")
 print(f"Uw korting voor het merk is: {discount} euro")
 print(f"U totaal bedrag om te betalen is: {afgerond_totaal} euro")
-
-
