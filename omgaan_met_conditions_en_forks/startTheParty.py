@@ -6,33 +6,7 @@ chips = True  # Je kunt de waarde van chips naar True of False aanpassen, afhank
 
 party_gasten = gasten >=4 and gasten <=20 and chips and drank and gastheer != "Slemmer"
 party_gastheer = gastheer > "" and drank and gastheer != "Slemmer"
-party_me = gastheer == "Bjorn"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+party_me = gastheer == "Bjorn" 
 
 if party_gasten or party_gastheer or party_me:
     print('Start the Party')
