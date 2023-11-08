@@ -8,10 +8,10 @@ def rond_bedrag_af(origineel_bedrag):
     afgerond_bedrag = afgeronde_centen / 100  # Terug naar bedrag met twee decimalen
     return afgerond_bedrag
 
-
-# Vraag de gebruiker om een bedrag in te voeren
+#laat een nummertje invoeren
 origineel_bedrag = float(input("Voer het originele bedrag in: "))
 afgeronde_bedrag = rond_bedrag_af(origineel_bedrag)
+expected = afgeronde_bedrag
 
 print(f"Origineel bedrag: {origineel_bedrag}")
 print(f"Afgerond bedrag: {afgeronde_bedrag}")
