@@ -41,6 +41,13 @@ expected = 16
 calculated = ceil(nr) 
 test('sky-is-the-limit', expected, calculated)
 
+nr = -133.4447
+expected = 133.445
+calculated = round(abs(nr), 3)
+test('cjv6', expected, calculated)
+
+
+
 report()
 
 

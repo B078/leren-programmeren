@@ -36,4 +36,8 @@ result1 = (nr1 - (nr4 - nr3)) / (nr2 + nr3)
 result2 = divide(substract(nr1, substract(nr4, nr3)), add(nr2, nr3))
 test('expression-5', result1, result2)
 
+result1 = (nr1 - (nr4 - nr3)) / (nr2 + nr3) - 17
+result2 = substract(divide(substract(nr1, substract(nr4, nr3)), add(nr2, nr3)), 17)
+test('cjv6', result1, result2)
+
 report()
