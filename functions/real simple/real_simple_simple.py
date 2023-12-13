@@ -3,7 +3,6 @@ import re
 #funtion1
 def get_value(data: str, separator: str, position: int) -> str:
     split_values = data.split(separator)  # split de komma
-
     if 0 <= position < len(split_values):
         value = split_values[position]  # krijg ew waarde van de postiti
     else:
@@ -13,12 +12,17 @@ def get_value(data: str, separator: str, position: int) -> str:
 
 # Test the function
 toets_data = 'Sofie:8,Emma:7,Ahmed:9,Daan:6,Lisa:8,Fatima:7,Ruben:9,Ayoub:6,Bram:6,Maria:7'
-separator = ','
+separator = ',' 
 position = 8  # position of Bram
 
 result = get_value(toets_data, separator, position)
 print(result)  # Bram:6
 
+result = get_value("fortnite cod minecraft worldofwar", " ", 3 )
+print(result)
+
+result = get_value(toets_data, separator, position)
+print(result)
 
 #funtion 2 
 
@@ -42,3 +46,6 @@ text = "Geachte heer/mevrouw,Ik wil graag solliciteren naar de functie van progr
 sub_sentences = mark_and_split(text)
 score = calculate_ego_score(sub_sentences)
 print(score)
+
+
+
