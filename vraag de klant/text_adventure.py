@@ -49,16 +49,16 @@ elif vraag1 == "jatten":
 
 
     if vraag2 == "riool":
-        print()
+        print("u heeft gekozen voor" ,vraag2)
         time.sleep(1.5)
         print(TextColors.WHITE + "jullie zijn ongezien Moscow binnengekomen " + TextColors.RESET)
         print(TextColors.WHITE + "Verover de poort van de muur zodat bravo er door heen kan " + TextColors.RESET)
 
 
     elif vraag2 == "opblazen":
-        print()
+        print("u heeft gekozen voor" ,vraag2)
         time.sleep(1.5)
-        print(TextColors.WHITE + "U heeft het bevel geven om de muur op te blazen maar was dat wel een slimme zet?" + TextColors.RESET)
+        print(TextColors.WHITE + "\nU heeft het bevel geven om de muur op te blazen maar was dat wel een slimme zet?" + TextColors.RESET)
         print(TextColors.WHITE + "omdat U in een oorlogsgebied zit zijn er overal militairen daarodat er zo enorme knal kwam zijn alle eenheden naar jullie positie gegaan." + TextColors.RESET)
         print(TextColors.RED + "U bent nu met uw team in een heftige vuurgevecht gekomen." + TextColors.RESET)
         input_vraag3 = TextColors.BLUE + "Wat gaat u doen?" + TextColors.RESET + " (overgeven/luchtsteun): "
@@ -72,7 +72,29 @@ elif vraag1 == "jatten":
             print(TextColors.RED + "Missie gefaald" + TextColors.RESET)
 
         elif vraag3 == "luchtsteun":
-            pass
+            print("\nU heeft gekozen om luchtsteun aan te vragen.")
+            print("🛩               🛩")
+            print(" 🛩            🛩")
+            print("   🛩        🛩")
+            print("           🛩")
+            print("     💥💥💥    ")
+            time.sleep(1)
+            print("\nU heeft het doel uitgeschakeld en kan weer op weg naar je missie.")
+            print("wel tempo maken de vijanden hebben dit namelijk ook gehoord.")
+            print(TextColors.WHITE + "\nu bent bij de warehouse gekozen van de tango, hoe wil je binnen komen?" + TextColors.RESET)
+            input_vraag4 = TextColors.BLUE + "Wacht je tot je een guard ziet en zo ze pasje steelt, of trap je de deuren in?" + TextColors.RESET + " (stelen/in trappen): " 
+            vraag4 = input(input_vraag4)
+
+
+            if vraag4 == "stelen":
+                print("u heeft gekozen voor" , vraag4)
+                print("\nU heeft nu het pasje ga naar binnen en voltooi je missie Alfa!!")
+
+
+            elif vraag4 == "in trappen":
+                print("u heeft gekozen voor" , vraag4)
+                print("\nStorm naar binnen en voltooi je missie Alfa!!!")
+
     
     
 
