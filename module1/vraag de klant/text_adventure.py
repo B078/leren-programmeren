@@ -51,8 +51,8 @@ elif vraag1 == "jatten":
     if vraag2 == "riool":
         print("u heeft gekozen voor" ,vraag2)
         time.sleep(1.5)
-        print(TextColors.WHITE + "jullie zijn ongezien Moscow binnengekomen " + TextColors.RESET)
-        print(TextColors.WHITE + "Verover de poort van de muur zodat bravo er door heen kan " + TextColors.RESET)
+        print("\nU heeft met het naar binnen trede het alarm af laten gaan en de russen hebben het riool vol laten lopen.")
+        print(TextColors.RED + "U heeft verloren, helaas." + TextColors.RESET)
 
 
     elif vraag2 == "opblazen":
@@ -88,12 +88,16 @@ elif vraag1 == "jatten":
 
             if vraag4 == "stelen":
                 print("u heeft gekozen voor" , vraag4)
-                print("\nU heeft nu het pasje ga naar binnen en voltooi je missie Alfa!!")
+                print("\nDit was niet slim de soldaten zijn heel alert")
+                print(TextColors.RED + "verloren" + TextColors.RESET)
 
 
             elif vraag4 == "in trappen":
                 print("u heeft gekozen voor" , vraag4)
                 print("\nStorm naar binnen en voltooi je missie Alfa!!!")
+                time.sleep(5)
+                print("\nU heeft uw missie behaald gefeliciteerd")
+
 
     
     
