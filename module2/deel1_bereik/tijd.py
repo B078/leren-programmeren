@@ -6,6 +6,3 @@ for uren in range(24):
 
     volgende_uur = (uren + 1) % 24
     volgende_periode = 'AM' if volgende_uur < 12 else 'PM'
-
-    if volgende_uur == 0:
-        print("12AM")
