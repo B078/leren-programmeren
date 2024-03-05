@@ -11,7 +11,7 @@ for _ in range(aantal_mm):
     kleur = random.choice(kleuren)
     zak_mm[kleur] = zak_mm.get(kleur, 0) + 1
 
-
+print(zak_mm)
 print("De zak met M&M's:")
 for kleur, hoeveelheid in zak_mm.items():
     print(f"{kleur}: {hoeveelheid}")

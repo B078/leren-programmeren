@@ -1,8 +1,16 @@
-for uren in range(24):
-    bereken_uur = uren % 12 or 12
-    periode = 'AM' if uren < 12 else 'PM'
+uur = 1
 
-    print(f"{bereken_uur}{periode}")
+while uur <= 24:
+    if uur == 12:
+        bereken_uur =12
+        periode = 'PM'
+    else:
+        bereken_uur = uur % 12
+    periode = 'AM' if uur < 12 else 'PM'
+    if uur == 24:
+        bereken_uur = 12
+        periode = 'AM'
 
-    volgende_uur = (uren + 1) % 24
-    volgende_periode = 'AM' if volgende_uur < 12 else 'PM'
+    print(f"{bereken_uur} {periode}")
+
+    uur += 1

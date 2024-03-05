@@ -18,5 +18,3 @@ print(" ".join(reversed(dagen_van_de_week[:5])))
 
 print("\nWeekenddagen in omgekeerde volgorde:")
 print(" ".join(reversed(dagen_van_de_week[-2:])))
-
-
